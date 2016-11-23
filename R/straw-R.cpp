@@ -42,6 +42,9 @@ using namespace std;
 
   Usage: juicebox-quick-dump <NONE/VC/VC_SQRT/KR> <hicFile(s)> <chr1>[:x1:x2] <chr2>[:y1:y2] <BP/FRAG> <binsize>
  */
+
+//[[Rcpp::plugins("cpp11")]]
+
 // pointer structure for reading blocks or matrices, holds the size and position
 struct indexEntry {
   int size;
